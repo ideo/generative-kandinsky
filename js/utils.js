@@ -44,7 +44,7 @@ function dataURItoBlob(dataURI) {
   return blob;
 }
 
-function downloadImages(svg_id) {
+function download(svg_id='#canvas') {
   if (svg_id[0] === '#') {
     var svg_id = svg_id.split('#')[1];
   }
