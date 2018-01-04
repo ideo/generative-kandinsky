@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/Buttons/2.0.0/css/buttons.min.css">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/chroma-js/1.2.1/chroma.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.6.0/js/md5.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/seedrandom/2.4.0/seedrandom.min.js"></script>
+    </head>
+    <body>
+	<div id="wrap">
+            <div class="container">
+		<svg id="canvas"></svg>
+		<button onclick="regenerate()" id="regenerate-button" class="button button-raised"><i class="fa fa-repeat"></i> Regenerate</button>
+		<button onclick="download()" id="download-button" class="button button-raised"><i class="fa fa-image"></i> Download</button>
+	    </div>
+	</div>
+	<script type="text/javascript" src="js/svg_todataurl.js"></script>
+	<script type="text/javascript" src="js/utils.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>

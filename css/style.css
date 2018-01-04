@@ -1,0 +1,19 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+#wrap {
+    width: 600px;
+    margin: 0 auto;
+}
+#canvas {
+    width: 100%;
+}
+svg {
+    border: 1px solid #eee;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.container {
+    padding-bottom: 40px;
+}
