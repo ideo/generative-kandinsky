@@ -10,7 +10,7 @@ body {
     width: 100%;
 }
 svg {
-    border: 1px solid #eee;
+    border: 0px solid #eee;
     margin-top: 10px;
     margin-bottom: 10px;
 }
