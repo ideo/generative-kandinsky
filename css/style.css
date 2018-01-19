@@ -3,7 +3,7 @@ body {
     padding: 0px;
 }
 #wrap {
-    width: 600px;
+    width: 800px;
     margin: 0 auto;
 }
 #canvas {
@@ -11,9 +11,19 @@ body {
 }
 svg {
     border: 0px solid #eee;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    /* margin-top: 10px; */
+    /* margin-bottom: 10px; */
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 .container {
-    padding-bottom: 40px;
+    /* padding-bottom: 40px; */
+    padding-bottom: 0px;
+}
+button {
+  display: none;
+}
+@page { 
+  margin: 0.5in;
+  size: auto;
 }
