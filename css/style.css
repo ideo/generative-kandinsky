@@ -1,9 +1,11 @@
 body {
-    margin: 0px;
-    padding: 0px;
+  font-family: 'Open Sans', 'sans-serif';
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
 }
 #wrap {
-    width: 800px;
+    width: 500px;
     margin: 0 auto;
 }
 #canvas {
@@ -11,19 +13,65 @@ body {
 }
 svg {
     border: 0px solid #eee;
+    /* margin: 10px; */
     /* margin-top: 10px; */
-    /* margin-bottom: 10px; */
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 7px;
 }
 .container {
-    /* padding-bottom: 40px; */
-    padding-bottom: 0px;
-}
-button {
-  display: none;
+  margin: 10px;
+  padding-bottom: 40px;
 }
 @page { 
   margin: 0.5in;
   size: auto;
+}
+#button {
+    background: white;
+    border: 1px solid black;
+    color: black;
+    cursor: pointer;
+    font-family: 'Open Sans', 'sans-serif';
+    text-transform: uppercase;
+    padding: 3px;
+    padding-left: 14px;
+    padding-right: 14px;
+    font-size: 14px;
+    line-height: 28px;
+    transition: all 0.2s;
+}
+#button:focus {
+  outline: none;
+  border-bottom: 2px solid black;
+  padding-bottom: 2px;
+}
+#button:hover {
+    background: black;
+    color: white;
+}
+#button:active {
+    color: #999;
+}
+h2 {
+  font-family: 'Merriweather', 'Georgia', 'serif';
+  font-weight: 700;
+  padding-top: 20px;
+}
+p {
+  margin: 0px;
+  line-height: 1.5;
+}
+span.title {
+  font-style: italic;
+}
+a:link {
+  color: black;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  color: #999;
+}
+a:active {
+  color: black;
 }

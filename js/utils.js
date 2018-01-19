@@ -5,8 +5,8 @@ function makeSVG(n_x, n_y) {
   s.clear()
   var frame = (n_x + 1) / (FRAME_FACTOR + 1)
   s.attr({
-    width: 800,
-    height: 800,
+    width: 500,
+    height: 500,
     viewBox: Snap.format('{min_x} {min_y} {width} {height}', {
       min_x: 0 - frame,
       min_y: 0 - frame,
