@@ -25,7 +25,7 @@ svg {
   margin: 0.5in;
   size: auto;
 }
-#button {
+.button {
     background: white;
     border: 1px solid black;
     color: black;
@@ -39,16 +39,16 @@ svg {
     line-height: 28px;
     transition: all 0.2s;
 }
-#button:focus {
+.button:focus {
   outline: none;
   border-bottom: 2px solid black;
   padding-bottom: 2px;
 }
-#button:hover {
+.button:hover {
     background: black;
     color: white;
 }
-#button:active {
+.button:active {
     color: #999;
 }
 h2 {
