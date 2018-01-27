@@ -4,6 +4,8 @@ function regenerate(seed) {
   // Sets Math.random to a PRNG initialized using the given explicit seed.
   if (seed) {
     Math.seedrandom(seed)
+  } else {
+    Math.seedrandom()
   }
   
   var N_X = 11
