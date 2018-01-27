@@ -99,4 +99,4 @@ function regenerate(seed) {
   drawLines(N_LINES, 3, 0.005, 0.015, 'black')
 
 }
-regenerate(window.location.hash)
+regenerate(window.location.hash.toLowerCase())
