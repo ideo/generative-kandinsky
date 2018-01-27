@@ -12,7 +12,9 @@ function makeSVG(n_x, n_y) {
       min_y: 0 - frame,
       width: n_x + 2 * frame,
       height: n_y + 2 * frame
-    })
+    }),
+    // transform: "scale(-1,1)",
+    // transform: "rotate(180)"
   })
   s.rect(-1, -1, n_x + 2, n_y + 2).attr({
     // fill: chroma.hcl(90, 1, 100),
