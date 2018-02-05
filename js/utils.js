@@ -14,15 +14,23 @@ function makeSVG(n_x, n_y) {
       height: n_y + 2 * frame
     }),
     // transform: "scale(-1,1)",
-    transform: "rotate(180)"
+    // transform: "rotate(180)"
   })
-  s.rect(-1, -1, n_x + 2, n_y + 2).attr({
+  var g = s.group()
+  g.rect(-1, -1, n_x + 2, n_y + 2).attr({
     // fill: chroma.hcl(90, 1, 100),
     // fill: chroma.hcl(135, 10, 10),
     fill: 'none',
     stroke: 'none'
   })
-  return s
+  g.transform(
+    Snap.format('r{angle},{x_center},{y_center}', {
+      angle: 180,
+      x_center: n_x / 2,
+      y_center: n_y / 2
+    })
+  )
+  return g
 }
 
 function dataURItoBlob(dataURI) {
@@ -55,8 +63,10 @@ function download(svg_id='#canvas') {
     callback : function(data) {
       var image = data.replace("image/png", "image/octet-stream");
 
-      var hash = md5(image).substring(0, 6)
-      var filename = 'computer-art-' + svg_id.split('-')[0] + '-' + hash;
+      var hash_pre = md5(image)
+      console.log(hash_pre);
+      var hash = hash_pre.substring(0, 6)
+      var filename = 'generative-kandinksy-' + svg_id.split('-')[0] + '-' + hash;
       var png_filename = filename + ".png";
       var svg_filename = filename + ".svg";
 
