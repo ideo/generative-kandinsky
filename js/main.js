@@ -101,4 +101,8 @@ function regenerate(seed) {
   drawLines(N_LINES, 3, 0.005, 0.015, 'black')
 
 }
+if (/headless/i.test(window.navigator.userAgent)) {
+    console.log("headless browser detected");
+    document.getElementById("non-image").style.visibility = "hidden";
+}
 regenerate(window.location.hash.toLowerCase())
